@@ -1,0 +1,12 @@
+# Local scripts
+scripts_local/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
+*.swp

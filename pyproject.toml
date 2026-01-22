@@ -1,0 +1,7 @@
+[project]
+name = "basic-algo-lecture-python"
+version = "0.1.0"
+description = "바킹독 실전 알고리즘 강좌 - Python 풀이"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []

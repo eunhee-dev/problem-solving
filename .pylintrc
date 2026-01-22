@@ -1,0 +1,7 @@
+[MESSAGES CONTROL]
+disable =
+    missing-docstring,
+    non-ascii-file-name
+
+[FORMAT]
+max-line-length = 120
