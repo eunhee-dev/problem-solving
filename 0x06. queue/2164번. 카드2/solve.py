@@ -3,8 +3,8 @@
 from collections import deque
 
 
-def main(n: int) -> None:
-    cards = deque(range(1, n+1))
+def solve(n: int) -> int:
+    cards = deque(range(1, n + 1))
 
     while len(cards) > 1:
         cards.popleft()
@@ -13,8 +13,12 @@ def main(n: int) -> None:
     return cards[0]
 
 
-if __name__ == "__main__":
-    input_n = int(input())
+def main() -> None:
+    n = int(input())
 
-    answer: int = main(input_n)
-    print(answer)
+    result: int = solve(n)
+    print(result)
+
+
+if __name__ == "__main__":
+    main()

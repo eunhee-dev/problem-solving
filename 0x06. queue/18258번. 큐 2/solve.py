@@ -4,13 +4,16 @@ import sys
 from collections import deque
 
 
-def main(n: int) -> None:
-    sys_input = sys.stdin.readline
-    queue = deque([])
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
+
+
+def solve(n: int) -> list[str]:
+    queue = deque()
     output = []
 
     for _ in range(n):
-        cmd = sys_input().rstrip().split()
+        cmd = sys_input().split()
         op = cmd[0]
 
         if op == "push":
@@ -34,11 +37,15 @@ def main(n: int) -> None:
         else:
             raise ValueError()
 
-    return "\n".join(output)
+    return output
+
+
+def main() -> None:
+    n = int(sys_input())
+
+    result: list[str] = solve(n)
+    sys.stdout.write("\n".join(result))
 
 
 if __name__ == "__main__":
-    input_n = int(input())
-
-    answer: str = main(input_n)
-    sys.stdout.write(answer)
+    main()

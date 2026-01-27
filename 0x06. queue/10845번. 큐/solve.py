@@ -4,36 +4,48 @@ import sys
 from collections import deque
 
 
-def main(n: int) -> None:
-    sys_input = sys.stdin.readline
-    queue = deque([])
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
+
+
+def solve(n: int) -> list[str]:
+    queue = deque()
+    output = []
 
     for _ in range(n):
-        cmd = sys_input().rstrip().split()
+        cmd = sys_input().split()
         op = cmd[0]
 
         if op == "push":
             queue.append(cmd[1])
 
         elif op == "pop":
-            print(queue.popleft() if queue else -1)
+            output.append(queue.popleft() if queue else "-1")
 
         elif op == "size":
-            print(len(queue))
+            output.append(str(len(queue)))
 
         elif op == "empty":
-            print(0 if queue else 1)
+            output.append("0" if queue else "1")
 
         elif op == "front":
-            print(queue[0] if queue else -1)
+            output.append(queue[0] if queue else "-1")
 
         elif op == "back":
-            print(queue[-1] if queue else -1)
+            output.append(queue[-1] if queue else "-1")
 
         else:
             raise ValueError()
 
+    return output
+
+
+def main() -> None:
+    n = int(sys_input())
+
+    result: list[str] = solve(n)
+    print(*result, sep="\n")
+
 
 if __name__ == "__main__":
-    input_n = int(input())
-    main(input_n)
+    main()
