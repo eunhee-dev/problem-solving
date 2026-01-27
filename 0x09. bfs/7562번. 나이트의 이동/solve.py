@@ -7,7 +7,7 @@ from collections import deque
 DIRECTIONS = [(1, 2), (2, 1), (1, -2), (2, -1), (-1, -2), (-2, -1), (-1, 2), (-2, 1)]
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 

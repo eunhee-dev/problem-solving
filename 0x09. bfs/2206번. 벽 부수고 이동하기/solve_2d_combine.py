@@ -1,4 +1,4 @@
-""" solve_2d.py for 2206번. 벽 부수고 이동하기 """
+""" solve_2d_combine.py for 2206번. 벽 부수고 이동하기 """
 
 import sys
 from collections import deque
@@ -8,7 +8,7 @@ from math import inf
 DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 
@@ -64,10 +64,10 @@ def solve(n: int, m: int, board: list[list[str]]) -> int:
 
 
 def main() -> None:
-    n, m = map(int, input().split())
+    n, m = map(int, sys_input().split())
     board = [list(sys_input()) for _ in range(n)]
 
-    answer: str = solve(n, m, board)
+    answer: int = solve(n, m, board)
     print(answer)
 
 

@@ -1,4 +1,4 @@
-""" solve_reuse_multi.py for 3197번. 백조의 호수 """
+""" solve_reuse_mitm.py for 3197번. 백조의 호수 """
 
 import sys
 from collections import deque

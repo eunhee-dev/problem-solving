@@ -49,7 +49,7 @@ def solve(h: int, w: int, board: list[str], keys: set[str]) -> int:
     return bfs(h, w, board, keys)
 
 
-def main():
+def main() -> None:
     t = int(sys_input())
     for _ in range(t):
         h, w = map(int, sys_input().split())

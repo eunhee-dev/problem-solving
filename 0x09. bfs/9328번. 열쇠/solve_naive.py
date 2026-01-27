@@ -68,7 +68,7 @@ def solve(h: int, w: int, board: list[str], keys: set[str]) -> int:
     return total_docs
 
 
-def main():
+def main() -> None:
     t = int(sys_input())
     for _ in range(t):
         h, w = map(int, sys_input().split())

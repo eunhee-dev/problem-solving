@@ -7,7 +7,7 @@ from collections import deque
 MAX_POSITION = 100000
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 

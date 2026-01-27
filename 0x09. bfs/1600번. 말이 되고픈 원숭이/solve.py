@@ -8,7 +8,7 @@ DIRECTIONS = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 HORSE_DIRECTIONS = [(1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1), (-1, 2)]
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 
