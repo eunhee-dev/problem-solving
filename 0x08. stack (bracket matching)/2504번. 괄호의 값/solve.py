@@ -1,7 +1,14 @@
-""" solve.py for 2504번. 괄호의 값 """ 
+""" solve.py for 2504번. 괄호의 값 """
+
+import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
+
 
 def solve(target_str: str) -> int:
-    stack: list[str | int] = []
+    stack = []
     pairs = {
         ")": ("(", 2),
         "]": ("[", 3)
@@ -20,7 +27,7 @@ def solve(target_str: str) -> int:
             while stack and isinstance(stack[-1], int):
                 to_be_sum += stack.pop()
 
-            ch_open, val = pairs.get(ch)
+            ch_open, val = pairs[ch]
 
             # 여는 괄호가 없거나 다른 괄호가 안닫혀 있지 않아야 함
             if not stack or stack[-1] != ch_open:
@@ -39,8 +46,12 @@ def solve(target_str: str) -> int:
     return sum(stack)
 
 
-if __name__ == '__main__':
-    input_target_str = input()
+def main() -> None:
+    target_str = sys_input()
 
-    answer: int = solve(input_target_str)
-    print(answer)
+    result: int = solve(target_str)
+    print(result)
+
+
+if __name__ == "__main__":
+    main()

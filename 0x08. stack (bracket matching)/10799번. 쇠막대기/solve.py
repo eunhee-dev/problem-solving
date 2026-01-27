@@ -1,6 +1,10 @@
-""" solve.py for 10799번. 쇠막대기 """ 
+""" solve.py for 10799번. 쇠막대기 """
 
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(target_str: str) -> int:
@@ -22,9 +26,12 @@ def solve(target_str: str) -> int:
     return count
 
 
-if __name__ == '__main__':
-    sys_input = sys.stdin.readline
-    input_target_str = sys_input().rstrip()
+def main() -> None:
+    target_str = sys_input()
 
-    answer: int = solve(input_target_str)
-    print(answer)
+    result: int = solve(target_str)
+    print(result)
+
+
+if __name__ == "__main__":
+    main()

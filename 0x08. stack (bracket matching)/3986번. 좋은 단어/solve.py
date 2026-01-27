@@ -1,6 +1,10 @@
-""" solve.py for 3986번. 좋은 단어 """ 
+""" solve.py for 3986번. 좋은 단어 """
 
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(target_str: str) -> bool:
@@ -17,11 +21,13 @@ def solve(target_str: str) -> bool:
     return not stack
 
 
+def main() -> None:
+    n = int(sys_input())
+    strs = (sys_input() for _ in range(n))
+
+    result: int = sum(1 for s in strs if solve(s))
+    print(result)
+
+
 if __name__ == "__main__":
-    sys_input = sys.stdin.readline
-
-    input_n = int(input())
-    input_strs = (sys_input().rstrip() for _ in range(input_n))
-
-    answer: int = sum(1 for input_str in input_strs if solve(input_str))
-    print(answer)
+    main()

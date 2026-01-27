@@ -1,6 +1,10 @@
-""" solve.py for 9012번. 괄호 """ 
+""" solve.py for 9012번. 괄호 """
 
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(paren_str: str) -> bool:
@@ -21,13 +25,15 @@ def solve(paren_str: str) -> bool:
     return paren_cnt == 0
 
 
+def main() -> None:
+    n = int(sys_input())
+
+    for _ in range(n):
+        paren_str = sys_input()
+
+        result: bool = solve(paren_str)
+        print("YES" if result else "NO")
+
+
 if __name__ == "__main__":
-    sys_input = sys.stdin.readline
-
-    input_n = int(input())
-
-    for _ in range(input_n):
-        input_paren_str = sys_input().rstrip()
-
-        answer: bool = solve(input_paren_str)
-        print("YES" if answer else "NO")
+    main()

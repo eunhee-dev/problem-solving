@@ -1,6 +1,10 @@
-""" solve.py for 4949번. 균형잡힌 세상 """ 
+""" solve.py for 4949번. 균형잡힌 세상 """
 
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(target_str: str) -> bool:
@@ -20,13 +24,15 @@ def solve(target_str: str) -> bool:
     return not stack
 
 
-if __name__ == "__main__":
-    sys_input = sys.stdin.readline
-
+def main() -> None:
     while True:
-        input_str = sys_input().rstrip()
-        if input_str == ".":
+        s = sys_input()
+        if s == ".":
             break
 
-        answer: bool = solve(input_str)
-        print("yes" if answer else "no")
+        result: bool = solve(s)
+        print("yes" if result else "no")
+
+
+if __name__ == "__main__":
+    main()
