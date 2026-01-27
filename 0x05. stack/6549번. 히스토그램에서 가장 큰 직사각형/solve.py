@@ -1,5 +1,10 @@
-# solve.py for 6549번. 히스토그램에서 가장 큰 직사각형
+""" solve.py for 6549번. 히스토그램에서 가장 큰 직사각형 """
+
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(n: int, heights: list[int]) -> int:
@@ -25,14 +30,18 @@ def solve(n: int, heights: list[int]) -> int:
     return max_area
 
 
-if __name__ == "__main__":
-    data = sys.stdin.read().splitlines()
+def main() -> None:
+    while True:
+        line = list(map(int, sys_input().split()))
+        n = line[0]
 
-    for line in data:
-        input_list = list(map(int, line.split()))
-
-        if input_list[0] == 0:
+        if n == 0:
             break
 
-        answer: int = solve(input_list[0], input_list[1:])
-        print(answer)
+        heights = line[1:]
+        result: int = solve(n, heights)
+        print(result)
+
+
+if __name__ == "__main__":
+    main()

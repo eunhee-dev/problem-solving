@@ -1,5 +1,10 @@
-# solve.py for 6198번. 옥상 정원 꾸미기
+""" solve.py for 6198번. 옥상 정원 꾸미기 """
+
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(n: int, heights: list[int]) -> int:
@@ -18,11 +23,13 @@ def solve(n: int, heights: list[int]) -> int:
     return visible_count
 
 
+def main() -> None:
+    n = int(sys_input())
+    heights = [int(sys_input()) for _ in range(n)]
+
+    result: int = solve(n, heights)
+    print(result)
+
+
 if __name__ == "__main__":
-    sys_input = sys.stdin.readline
-
-    input_n = int(input())
-    input_heights = [int(sys_input().rstrip()) for _ in range(input_n)]
-
-    answer: int = solve(input_n, input_heights)
-    print(answer)
+    main()

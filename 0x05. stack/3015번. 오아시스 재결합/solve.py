@@ -1,5 +1,10 @@
-# solve.py for 3015번. 오아시스 재결합
+""" solve.py for 3015번. 오아시스 재결합 """
+
 import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
 
 
 def solve(heights: list[int]) -> int:
@@ -24,11 +29,13 @@ def solve(heights: list[int]) -> int:
     return total_pairs
 
 
+def main() -> None:
+    n = int(sys_input())
+    heights = [int(sys_input()) for _ in range(n)]
+
+    result: int = solve(heights)
+    print(result)
+
+
 if __name__ == "__main__":
-    sys_input = sys.stdin.readline
-
-    input_n = int(input())
-    input_heights = [int(sys_input().rstrip()) for _ in range(input_n)]
-
-    answer: int = solve(input_heights)
-    print(answer)
+    main()
