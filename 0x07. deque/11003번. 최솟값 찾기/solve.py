@@ -1,10 +1,14 @@
-""" solve.py for 11003번. 최솟값 찾기 """ 
+""" solve.py for 11003번. 최솟값 찾기 """
 
 import sys
 from collections import deque
 
 
-def solve(l: int, a: list) -> str:
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
+
+
+def solve(l: int, a: list[int]) -> list[int]:
     deq = deque()
     min_list = []
 
@@ -16,16 +20,18 @@ def solve(l: int, a: list) -> str:
         if deq[0] <= i - l:
             deq.popleft()
 
-        min_list.append(str(a[deq[0]]))
+        min_list.append(a[deq[0]])
 
-    return " ".join(min_list)
+    return min_list
+
+
+def main() -> None:
+    _, l = map(int, sys_input().split())
+    a = list(map(int, sys_input().split()))
+
+    result: list[int] = solve(l, a)
+    sys.stdout.write(" ".join(map(str, result)))
 
 
 if __name__ == "__main__":
-    sys_input = sys.stdin.readline
-
-    _, input_l = map(int, input().split())
-    input_a = list(map(int, sys_input().rstrip().split()))
-
-    answer: str = solve(input_l, input_a)
-    sys.stdout.write(answer)
+    main()

@@ -24,3 +24,5 @@ https://www.acmicpc.net/problem/11003
 2. stack에서 썼던 monotonic stack과 같이 monotonic deque을 사용하면 O(n)에 풀이 가능하다.
 
 3. (python에서는) 우선순위 큐(heapq, O(nlogn))으로 풀면 시간 초과가 발생한다.
+
+4. n이 최대 500만이므로 출력 시 `print()` 대신 `sys.stdout.write()`를 사용하면 대용량 데이터를 더 빠르게 출력할 수 있다.

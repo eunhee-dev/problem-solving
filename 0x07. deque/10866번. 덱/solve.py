@@ -1,15 +1,19 @@
-""" solve.py for 10866번. 덱 """ 
+""" solve.py for 10866번. 덱 """
 
 import sys
 from collections import deque
 
 
-def solve(n: int) -> None:
-    sys_input = sys.stdin.readline
-    my_deque = deque([])
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
+
+
+def solve(n: int) -> list[str]:
+    my_deque = deque()
+    output = []
 
     for _ in range(n):
-        cmd = sys_input().rstrip().split()
+        cmd = sys_input().split()
         op = cmd[0]
 
         if op == "push_front":
@@ -19,27 +23,35 @@ def solve(n: int) -> None:
             my_deque.append(cmd[1])
 
         elif op == "pop_front":
-            print(my_deque.popleft() if my_deque else -1)
+            output.append(my_deque.popleft() if my_deque else "-1")
 
         elif op == "pop_back":
-            print(my_deque.pop() if my_deque else -1)
+            output.append(my_deque.pop() if my_deque else "-1")
 
         elif op == "size":
-            print(len(my_deque))
+            output.append(str(len(my_deque)))
 
         elif op == "empty":
-            print(0 if my_deque else 1)
+            output.append("0" if my_deque else "1")
 
         elif op == "front":
-            print(my_deque[0] if my_deque else -1)
+            output.append(my_deque[0] if my_deque else "-1")
 
         elif op == "back":
-            print(my_deque[-1] if my_deque else -1)
+            output.append(my_deque[-1] if my_deque else "-1")
 
         else:
             raise ValueError()
 
+    return output
+
+
+def main() -> None:
+    n = int(sys_input())
+
+    result: list[str] = solve(n)
+    print(*result, sep="\n")
+
 
 if __name__ == "__main__":
-    input_n = int(input())
-    solve(input_n)
+    main()
