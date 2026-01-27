@@ -7,7 +7,7 @@ import math
 MAX_GRADE = 6
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 

@@ -4,7 +4,7 @@ import sys
 import math
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 

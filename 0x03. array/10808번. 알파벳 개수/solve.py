@@ -1,9 +1,9 @@
-""" solve.py for 110808번. 알파벳 개수 """
+""" solve.py for 10808번. 알파벳 개수 """
 
 import sys
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 

@@ -3,11 +3,11 @@
 import sys
 
 
-def sys_input():
+def sys_input() -> str:
     return sys.stdin.readline().rstrip()
 
 
-def solve(s: list[str], v: str) -> bool:
+def solve(s: list[str], v: str) -> int:
     return s.count(v)
 
 
