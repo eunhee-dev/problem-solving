@@ -19,17 +19,17 @@
 | 기본 문제✔ | 10171 | [고양이](https://www.acmicpc.net/problem/10171) | [코드](./10171번.%20고양이/) |
 | 기본 문제✔ | 10869 | [사칙연산](https://www.acmicpc.net/problem/10869) | [코드](./10869번.%20사칙연산/) |
 | 기본 문제✔ | 9498 | [시험 성적](https://www.acmicpc.net/problem/9498) | [코드](./9498번.%20시험%20성적/) |
-| 기본 문제✔ | 2752 | [세수정렬](https://www.acmicpc.net/problem/2752) | - |
-| 기본 문제✔ | 2753 | [윤년](https://www.acmicpc.net/problem/2753) | - |
-| 기본 문제✔ | 2480 | [주사위 세개](https://www.acmicpc.net/problem/2480) | - |
-| 기본 문제✔ | 2490 | [윷놀이](https://www.acmicpc.net/problem/2490) | - |
-| 기본 문제✔ | 2576 | [홀수](https://www.acmicpc.net/problem/2576) | - |
-| 기본 문제✔ | 2587 | [대표값2](https://www.acmicpc.net/problem/2587) | - |
-| 기본 문제✔ | 2309 | [일곱 난쟁이](https://www.acmicpc.net/problem/2309) | - |
-| 기본 문제✔ | 10093 | [숫자](https://www.acmicpc.net/problem/10093) | - |
-| 기본 문제✔ | 1267 | [핸드폰 요금](https://www.acmicpc.net/problem/1267) | - |
-| 기본 문제✔ | 10804 | [카드 역배치](https://www.acmicpc.net/problem/10804) | - |
-| 기본 문제✔ | 15552 | [빠른 A+B](https://www.acmicpc.net/problem/15552) | - |
+| 기본 문제✔ | 2752 | [세수정렬](https://www.acmicpc.net/problem/2752) | [코드](./2752번.%20세수정렬/) |
+| 기본 문제✔ | 2753 | [윤년](https://www.acmicpc.net/problem/2753) | [코드](./2753번.%20윤년/) |
+| 기본 문제✔ | 2480 | [주사위 세개](https://www.acmicpc.net/problem/2480) | [코드](./2480번.%20주사위%20세개/) |
+| 기본 문제✔ | 2490 | [윷놀이](https://www.acmicpc.net/problem/2490) | [코드](./2490번.%20윷놀이/) |
+| 기본 문제✔ | 2576 | [홀수](https://www.acmicpc.net/problem/2576) | [코드](./2576번.%20홀수/) |
+| 기본 문제✔ | 2587 | [대표값2](https://www.acmicpc.net/problem/2587) | [코드](./2587번.%20대표값2/) |
+| 기본 문제✔ | 2309 | [일곱 난쟁이](https://www.acmicpc.net/problem/2309) | [코드](./2309번.%20일곱%20난쟁이/) |
+| 기본 문제✔ | 10093 | [숫자](https://www.acmicpc.net/problem/10093) | [코드](./10093번.%20숫자/) |
+| 기본 문제✔ | 1267 | [핸드폰 요금](https://www.acmicpc.net/problem/1267) | [코드](./1267번.%20핸드폰%20요금/) |
+| 기본 문제✔ | 10804 | [카드 역배치](https://www.acmicpc.net/problem/10804) | [코드](./10804번.%20카드%20역배치/) |
+| 기본 문제✔ | 15552 | [빠른 A+B](https://www.acmicpc.net/problem/15552) | [코드](./15552번.%20빠른%20A+B/) |
 | 기본 문제✔ | 2438 | [별 찍기 - 1](https://www.acmicpc.net/problem/2438) | - |
 | 기본 문제✔ | 2439 | [별 찍기 - 2](https://www.acmicpc.net/problem/2439) | - |
 | 기본 문제✔ | 2440 | [별 찍기 - 3](https://www.acmicpc.net/problem/2440) | - |
