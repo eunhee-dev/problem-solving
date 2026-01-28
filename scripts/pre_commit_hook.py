@@ -1,16 +1,13 @@
-#!/usr/bin/env python3
 """
 Pre-commit hook: 새 풀이 추가 시 README 자동 업데이트 및 problems.json 갱신
 
 설치 방법:
     # Unix (macOS/Linux)
-    ln -sf ../../backjoon/scripts/pre-commit-hook.sh .git/hooks/pre-commit
+    ln -sf ../../scripts/pre-commit-hook.sh .git/hooks/pre-commit
+    chmod +x .git/hooks/pre-commit
 
-    # Windows (Git Bash)
-    cp backjoon/scripts/pre-commit-hook.sh .git/hooks/pre-commit
-
-    # Windows (PowerShell)
-    Copy-Item backjoon/scripts/pre-commit-hook.ps1 .git/hooks/pre-commit
+    # Windows (Git Bash / PowerShell)
+    cp scripts/pre_commit_hook.py .git/hooks/pre-commit
 """
 
 import json
@@ -21,7 +18,7 @@ from pathlib import Path
 
 # 스크립트 경로 설정
 SCRIPT_DIR = Path(__file__).parent.resolve()
-BACKJOON_DIR = SCRIPT_DIR.parent
+ROOT_DIR = SCRIPT_DIR.parent
 PROBLEMS_JSON = SCRIPT_DIR / "problems.json"
 
 
@@ -40,7 +37,7 @@ def get_staged_files() -> list[str]:
 
 def extract_chapter_id(file_path: str) -> str | None:
     """파일 경로에서 챕터 ID 추출"""
-    match = re.match(r"^backjoon/(0x[0-9a-fA-F]+)\. ", file_path)
+    match = re.match(r"^(0x[0-9a-fA-F]+)\. ", file_path)
     if match:
         return match.group(1).lower()
     return None
@@ -60,12 +57,12 @@ def run_uv_script(script_name: str, args: list[str]) -> bool:
     cmd = ["uv", "run", str(script_path)] + args
 
     try:
-        result = subprocess.run(cmd, cwd=BACKJOON_DIR, check=False)
+        result = subprocess.run(cmd, cwd=ROOT_DIR, check=False)
         return result.returncode == 0
     except FileNotFoundError:
         # uv가 없으면 python으로 시도
         cmd = [sys.executable, str(script_path)] + args
-        result = subprocess.run(cmd, cwd=BACKJOON_DIR, check=False)
+        result = subprocess.run(cmd, cwd=ROOT_DIR, check=False)
         return result.returncode == 0
 
 
@@ -121,7 +118,7 @@ def main() -> int:
             chapter_dir = chapter_data.get("dir", "")
 
             if chapter_dir:
-                readme_path = BACKJOON_DIR / chapter_dir / "README.md"
+                readme_path = ROOT_DIR / chapter_dir / "README.md"
                 if readme_path.exists():
                     git_add(readme_path)
                     print(f"✅ {chapter_dir}/README.md 스테이징됨")

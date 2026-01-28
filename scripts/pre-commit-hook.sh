@@ -3,7 +3,7 @@
 # Python 스크립트 호출
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-PYTHON_SCRIPT="$REPO_ROOT/backjoon/scripts/pre_commit_hook.py"
+PYTHON_SCRIPT="$REPO_ROOT/scripts/pre_commit_hook.py"
 
 export PYTHONIOENCODING=utf-8
 
