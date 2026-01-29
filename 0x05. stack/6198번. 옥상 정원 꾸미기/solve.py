@@ -27,8 +27,8 @@ def main() -> None:
     n = int(sys_input())
     heights = [int(sys_input()) for _ in range(n)]
 
-    result: int = solve(n, heights)
-    print(result)
+    answer: int = solve(n, heights)
+    print(answer)
 
 
 if __name__ == "__main__":

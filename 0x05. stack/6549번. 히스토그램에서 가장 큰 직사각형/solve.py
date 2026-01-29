@@ -34,13 +34,12 @@ def main() -> None:
     while True:
         line = list(map(int, sys_input().split()))
         n = line[0]
-
         if n == 0:
             break
-
         heights = line[1:]
-        result: int = solve(n, heights)
-        print(result)
+
+        answer: int = solve(n, heights)
+        print(answer)
 
 
 if __name__ == "__main__":
