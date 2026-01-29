@@ -15,8 +15,8 @@ def main() -> None:
     t = int(sys_input())
     pairs = [(a, b) for a, b in (map(int, sys_input().split()) for _ in range(t))]
 
-    result: list[int] = solve(pairs)
-    sys.stdout.write("\n".join(map(str, result)))
+    answer: list[int] = solve(pairs)
+    sys.stdout.write("\n".join(map(str, answer)))
 
 
 if __name__ == "__main__":

@@ -16,9 +16,9 @@ def solve(a: int, b: int) -> tuple[int, list[int]]:
 def main() -> None:
     a, b = map(int, sys_input().split())
 
-    count, nums = solve(a, b)
-    print(count)
-    print(*nums)
+    answer: tuple[int, list[int]] = solve(a, b)
+    print(answer[0])
+    print(*answer[1])
 
 
 if __name__ == "__main__":

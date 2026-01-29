@@ -17,8 +17,8 @@ def solve(intervals: list[tuple[int, int]]) -> list[int]:
 def main() -> None:
     intervals = [(a, b) for a, b in (map(int, sys_input().split()) for _ in range(10))]
 
-    result: list[int] = solve(intervals)
-    print(*result)
+    answer: list[int] = solve(intervals)
+    print(*answer)
 
 
 if __name__ == "__main__":

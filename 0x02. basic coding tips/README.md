@@ -30,16 +30,16 @@
 | 기본 문제✔ | 1267 | [핸드폰 요금](https://www.acmicpc.net/problem/1267) | [코드](./1267번.%20핸드폰%20요금/) |
 | 기본 문제✔ | 10804 | [카드 역배치](https://www.acmicpc.net/problem/10804) | [코드](./10804번.%20카드%20역배치/) |
 | 기본 문제✔ | 15552 | [빠른 A+B](https://www.acmicpc.net/problem/15552) | [코드](./15552번.%20빠른%20A+B/) |
-| 기본 문제✔ | 2438 | [별 찍기 - 1](https://www.acmicpc.net/problem/2438) | - |
-| 기본 문제✔ | 2439 | [별 찍기 - 2](https://www.acmicpc.net/problem/2439) | - |
-| 기본 문제✔ | 2440 | [별 찍기 - 3](https://www.acmicpc.net/problem/2440) | - |
-| 기본 문제✔ | 2441 | [별 찍기 - 4](https://www.acmicpc.net/problem/2441) | - |
-| 기본 문제✔ | 2442 | [별 찍기 - 5](https://www.acmicpc.net/problem/2442) | - |
-| 기본 문제✔ | 2443 | [별 찍기 - 6](https://www.acmicpc.net/problem/2443) | - |
-| 기본 문제✔ | 2444 | [별 찍기 - 7](https://www.acmicpc.net/problem/2444) | - |
-| 기본 문제✔ | 2445 | [별 찍기 - 8](https://www.acmicpc.net/problem/2445) | - |
-| 기본 문제✔ | 2446 | [별 찍기 - 9](https://www.acmicpc.net/problem/2446) | - |
-| 기본 문제✔ | 2562 | [최댓값](https://www.acmicpc.net/problem/2562) | - |
+| 기본 문제✔ | 2438 | [별 찍기 - 1](https://www.acmicpc.net/problem/2438) | [코드](./2438번.%20별%20찍기%20-%201/) |
+| 기본 문제✔ | 2439 | [별 찍기 - 2](https://www.acmicpc.net/problem/2439) | [코드](./2439번.%20별%20찍기%20-%202/) |
+| 기본 문제✔ | 2440 | [별 찍기 - 3](https://www.acmicpc.net/problem/2440) | [코드](./2440번.%20별%20찍기%20-%203/) |
+| 기본 문제✔ | 2441 | [별 찍기 - 4](https://www.acmicpc.net/problem/2441) | [코드](./2441번.%20별%20찍기%20-%204/) |
+| 기본 문제✔ | 2442 | [별 찍기 - 5](https://www.acmicpc.net/problem/2442) | [코드](./2442번.%20별%20찍기%20-%205/) |
+| 기본 문제✔ | 2443 | [별 찍기 - 6](https://www.acmicpc.net/problem/2443) | [코드](./2443번.%20별%20찍기%20-%206/) |
+| 기본 문제✔ | 2444 | [별 찍기 - 7](https://www.acmicpc.net/problem/2444) | [코드](./2444번.%20별%20찍기%20-%207/) |
+| 기본 문제✔ | 2445 | [별 찍기 - 8](https://www.acmicpc.net/problem/2445) | [코드](./2445번.%20별%20찍기%20-%208/) |
+| 기본 문제✔ | 2446 | [별 찍기 - 9](https://www.acmicpc.net/problem/2446) | [코드](./2446번.%20별%20찍기%20-%209/) |
+| 기본 문제✔ | 2562 | [최댓값](https://www.acmicpc.net/problem/2562) | [코드](./2562번.%20최댓값/) |
 
 
 ## 핵심 포인트

@@ -17,8 +17,8 @@ def solve(nums: list[int]) -> list[int]:
 def main() -> None:
     nums = [int(sys_input()) for _ in range(7)]
 
-    result: list[int] = solve(nums)
-    print(*result, sep="\n")
+    answer: list[int] = solve(nums)
+    print(*answer, sep="\n")
 
 
 if __name__ == "__main__":

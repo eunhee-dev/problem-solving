@@ -22,8 +22,8 @@ def main() -> None:
     _ = int(sys_input())
     calls = list(map(int, sys_input().split()))
 
-    result: str = solve(calls)
-    print(result)
+    answer: str = solve(calls)
+    print(answer)
 
 
 if __name__ == "__main__":

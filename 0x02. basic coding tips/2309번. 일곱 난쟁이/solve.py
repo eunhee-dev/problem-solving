@@ -23,8 +23,8 @@ def solve(heights: list[int]) -> list[int]:
 def main() -> None:
     heights = [int(sys_input()) for _ in range(9)]
 
-    result: list[int] = solve(heights)
-    print(*result, sep="\n")
+    answer: list[int] = solve(heights)
+    print(*answer, sep="\n")
 
 
 if __name__ == "__main__":

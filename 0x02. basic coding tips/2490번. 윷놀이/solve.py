@@ -14,8 +14,8 @@ def solve(yuts: list[list[int]]) -> list[str]:
 def main() -> None:
     yuts = [list(map(int, sys_input().split())) for _ in range(3)]
 
-    result: list[str] = solve(yuts)
-    print(*result, sep="\n")
+    answer: list[str] = solve(yuts)
+    print(*answer, sep="\n")
 
 
 if __name__ == "__main__":

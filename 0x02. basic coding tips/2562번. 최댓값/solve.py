@@ -1,4 +1,4 @@
-""" solve.py for 2587번. 대표값2 """
+""" solve.py for 2562번. 최댓값 """
 
 import sys
 
@@ -8,16 +8,17 @@ def sys_input() -> str:
 
 
 def solve(nums: list[int]) -> tuple[int, int]:
-    avg = sum(nums) // len(nums)
-    median = sorted(nums)[len(nums) // 2]
-    return avg, median
+    max_val = max(nums)
+    max_idx = nums.index(max_val) + 1
+    return max_val, max_idx
 
 
 def main() -> None:
-    nums = [int(sys_input()) for _ in range(5)]
+    nums = [int(sys_input()) for _ in range(9)]
 
     answer: tuple[int, int] = solve(nums)
-    print(*answer, sep="\n")
+    print(answer[0])
+    print(answer[1])
 
 
 if __name__ == "__main__":
