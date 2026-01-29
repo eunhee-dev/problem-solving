@@ -29,8 +29,8 @@ def main() -> None:
     _, l = map(int, sys_input().split())
     a = list(map(int, sys_input().split()))
 
-    result: list[int] = solve(l, a)
-    sys.stdout.write(" ".join(map(str, result)))
+    answer: list[int] = solve(l, a)
+    sys.stdout.write(" ".join(map(str, answer)))
 
 
 if __name__ == "__main__":

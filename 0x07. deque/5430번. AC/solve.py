@@ -38,8 +38,8 @@ def main() -> None:
         _ = sys_input()
         list_str = sys_input()[1:-1]
 
-        result: str = solve(funcs, list_str)
-        print(result)
+        answer: str = solve(funcs, list_str)
+        print(answer)
 
 
 if __name__ == "__main__":

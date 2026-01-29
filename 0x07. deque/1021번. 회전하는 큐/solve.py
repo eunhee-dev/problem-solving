@@ -29,8 +29,8 @@ def main() -> None:
     n, _ = map(int, input().split())
     nums = list(map(int, input().split()))
 
-    result: int = solve(n, nums)
-    print(result)
+    answer: int = solve(n, nums)
+    print(answer)
 
 
 if __name__ == "__main__":
