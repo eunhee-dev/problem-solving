@@ -30,8 +30,8 @@ def main() -> None:
         if s == ".":
             break
 
-        result: bool = solve(s)
-        print("yes" if result else "no")
+        answer: bool = solve(s)
+        print("yes" if answer else "no")
 
 
 if __name__ == "__main__":

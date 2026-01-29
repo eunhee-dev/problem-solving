@@ -31,8 +31,8 @@ def main() -> None:
     for _ in range(n):
         paren_str = sys_input()
 
-        result: bool = solve(paren_str)
-        print("YES" if result else "NO")
+        answer: bool = solve(paren_str)
+        print("YES" if answer else "NO")
 
 
 if __name__ == "__main__":

@@ -29,8 +29,8 @@ def solve(target_str: str) -> int:
 def main() -> None:
     target_str = sys_input()
 
-    result: int = solve(target_str)
-    print(result)
+    answer: int = solve(target_str)
+    print(answer)
 
 
 if __name__ == "__main__":

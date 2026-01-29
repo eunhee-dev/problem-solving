@@ -25,8 +25,8 @@ def main() -> None:
     n = int(sys_input())
     strs = (sys_input() for _ in range(n))
 
-    result: int = sum(1 for s in strs if solve(s))
-    print(result)
+    answer: int = sum(1 for s in strs if solve(s))
+    print(answer)
 
 
 if __name__ == "__main__":
