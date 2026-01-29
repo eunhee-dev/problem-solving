@@ -16,8 +16,8 @@ def solve(n: int) -> int:
 def main() -> None:
     n = int(input())
 
-    result: int = solve(n)
-    print(result)
+    answer: int = solve(n)
+    print(answer)
 
 
 if __name__ == "__main__":

@@ -43,8 +43,8 @@ def solve(n: int) -> list[str]:
 def main() -> None:
     n = int(sys_input())
 
-    result: list[str] = solve(n)
-    print(*result, sep="\n")
+    answer: list[str] = solve(n)
+    print(*answer, sep="\n")
 
 
 if __name__ == "__main__":
