@@ -1,22 +1,16 @@
-""" solve.py for 10869번. 사칙연산 """
-
 import sys
 
 
-def sys_input() -> str:
+def sys_input():
     return sys.stdin.readline().rstrip()
 
-
-def solve(a: int, b: int) -> tuple[int, int, int, int, int]:
-    return a + b, a - b, a * b, a // b, a % b
-
-
-def main() -> None:
+def solve():
     a, b = map(int, sys_input().split())
+    return a+b, a-b, a*b, a//b, a%b
 
-    answer = solve(a, b)
+def main():
+    answer = solve()
     print(*answer, sep="\n")
-
 
 if __name__ == "__main__":
     main()
