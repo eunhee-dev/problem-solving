@@ -2,7 +2,7 @@
   "chapters": {
     "0x02": {
       "name": "기초 코드 작성 요령 II",
-      "dir": "0x02. basic coding tips",
+      "dir": "0x02_basic-coding-tips",
       "problems": [
         {"number": 10871, "name": "X보다 작은 수", "category": "연습 문제"},
         {"number": 1000, "name": "A+B", "category": "기본 문제✔"},
@@ -35,7 +35,7 @@
     },
     "0x03": {
       "name": "배열",
-      "dir": "0x03. array",
+      "dir": "0x03_array",
       "problems": [
         {"number": 10808, "name": "알파벳 개수", "category": "연습 문제"},
         {"number": 2577, "name": "숫자의 개수", "category": "기본 문제✔"},
@@ -49,7 +49,7 @@
     },
     "0x04": {
       "name": "연결 리스트",
-      "dir": "0x04. linked list",
+      "dir": "0x04_linked-list",
       "problems": [
         {"number": 1406, "name": "에디터", "category": "연습 문제"},
         {"number": 5397, "name": "키로거", "category": "기본 문제✔"},
@@ -58,7 +58,7 @@
     },
     "0x05": {
       "name": "스택",
-      "dir": "0x05. stack",
+      "dir": "0x05_stack",
       "problems": [
         {"number": 10828, "name": "스택", "category": "연습 문제"},
         {"number": 10773, "name": "제로", "category": "기본 문제✔"},
@@ -72,7 +72,7 @@
     },
     "0x06": {
       "name": "큐",
-      "dir": "0x06. queue",
+      "dir": "0x06_queue",
       "problems": [
         {"number": 10845, "name": "큐", "category": "연습 문제"},
         {"number": 18258, "name": "큐 2", "category": "기본 문제✔"},
@@ -81,7 +81,7 @@
     },
     "0x07": {
       "name": "덱",
-      "dir": "0x07. deque",
+      "dir": "0x07_deque",
       "problems": [
         {"number": 10866, "name": "덱", "category": "연습 문제"},
         {"number": 1021, "name": "회전하는 큐", "category": "기본 문제✔"},
@@ -91,7 +91,7 @@
     },
     "0x08": {
       "name": "스택의 활용(수식의 괄호 쌍)",
-      "dir": "0x08. stack (bracket matching)",
+      "dir": "0x08_stack-bracket-matching",
       "problems": [
         {"number": 4949, "name": "균형잡힌 세상", "category": "연습 문제"},
         {"number": 3986, "name": "좋은 단어", "category": "기본 문제✔"},
@@ -102,7 +102,7 @@
     },
     "0x09": {
       "name": "BFS",
-      "dir": "0x09. bfs",
+      "dir": "0x09_bfs",
       "problems": [
         {"number": 1926, "name": "그림", "category": "연습 문제"},
         {"number": 2178, "name": "미로 탐색", "category": "연습 문제"},
@@ -138,7 +138,7 @@
     },
     "0x0b": {
       "name": "재귀",
-      "dir": "0x0b. recursion",
+      "dir": "0x0b_recursion",
       "problems": [
         {"number": 1629, "name": "곱셈", "category": "연습 문제"},
         {"number": 11729, "name": "하노이 탑 이동 순서", "category": "연습 문제"},
@@ -154,7 +154,7 @@
     },
     "0x0c": {
       "name": "백트래킹",
-      "dir": "0x0c. backtracking",
+      "dir": "0x0c_backtracking",
       "problems": [
         {"number": 15649, "name": "N과 M (1)", "category": "연습 문제"},
         {"number": 9663, "name": "N-Queen", "category": "연습 문제"},
@@ -180,7 +180,7 @@
     },
     "0x0d": {
       "name": "시뮬레이션",
-      "dir": "0x0d. simulation",
+      "dir": "0x0d_simulation",
       "problems": [
         {"number": 15683, "name": "감시", "category": "연습 문제"},
         {"number": 18808, "name": "스티커 붙이기", "category": "연습 문제"},
@@ -247,7 +247,7 @@
     },
     "0x0e": {
       "name": "정렬 I",
-      "dir": "0x0e. sorting I",
+      "dir": "0x0e_sorting-I",
       "problems": [
         {"number": 2750, "name": "수 정렬하기", "category": "기본 문제"},
         {"number": 2751, "name": "수 정렬하기 2", "category": "기본 문제"},
@@ -261,7 +261,7 @@
     },
     "0x0f": {
       "name": "정렬 II",
-      "dir": "0x0f. sorting II",
+      "dir": "0x0f_sorting-II",
       "problems": [
         {"number": 1431, "name": "시리얼 번호", "category": "연습 문제"},
         {"number": 11652, "name": "카드", "category": "연습 문제"},
@@ -276,7 +276,7 @@
     },
     "0x10": {
       "name": "다이나믹 프로그래밍",
-      "dir": "0x10. dynamic programming",
+      "dir": "0x10_dynamic-programming",
       "problems": [
         {"number": 1463, "name": "1로 만들기", "category": "연습 문제"},
         {"number": 9095, "name": "1, 2, 3 더하기", "category": "연습 문제"},
@@ -313,7 +313,7 @@
     },
     "0x11": {
       "name": "그리디",
-      "dir": "0x11. greedy",
+      "dir": "0x11_greedy",
       "problems": [
         {"number": 11047, "name": "동전 0", "category": "연습 문제"},
         {"number": 1931, "name": "회의실 배정", "category": "연습 문제"},
@@ -336,7 +336,7 @@
     },
     "0x12": {
       "name": "수학",
-      "dir": "0x12. math",
+      "dir": "0x12_math",
       "problems": [
         {"number": 1978, "name": "소수 찾기", "category": "연습 문제"},
         {"number": 1929, "name": "소수 구하기", "category": "연습 문제"},

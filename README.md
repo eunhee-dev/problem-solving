@@ -149,61 +149,23 @@ if __name__ == "__main__":
 
 ```
 .
-├── 0x02. basic coding tips/
-├── 0x03. array/
-├── 0x04. linked list/
-├── 0x05. stack/
-├── 0x06. queue/
-├── 0x07. deque/
-├── 0x08. stack (bracket matching)/
-├── 0x09. bfs/
-├── 0x0b. recursion/
-├── 0x0c. backtracking/
-├── 0x0d. simulation/
-├── 0x0e. sorting I/
-├── 0x0f. sorting II/
-├── 0x10. dynamic programming/
-├── 0x11. greedy/
+├── 0x02_basic-coding-tips/
+├── 0x03_array/
+├── 0x04_linked-list/
+├── 0x05_stack/
+├── 0x06_queue/
+├── 0x07_deque/
+├── 0x08_stack-bracket-matching/
+├── 0x09_bfs/
+├── 0x0b_recursion/
+├── 0x0c_backtracking/
+├── 0x0d_simulation/
+├── 0x0e_sorting-I/
+├── 0x0f_sorting-II/
+├── 0x10_dynamic-programming/
+├── 0x11_greedy/
 └── README.md
 ```
-
-각 폴더 안에는 `{문제번호}번. {문제명}/solve.py` 형태로 풀이가 들어있습니다.
-
-## 진행 상황
-
-현재 **0x11강 (그리디)** 까지 풀이가 완료되어 있습니다. 이후 강의 풀이는 차차 추가할 예정입니다.
-
-바킹독님이 [오리엔테이션](https://blog.encrypted.gg/921)에서 언급하셨듯이, 삼성 A형을 포함한 많은 기업 코딩테스트가 BFS/DFS/백트래킹/시뮬레이션 위주로 출제되기 때문에 시간이 없으신 분들은 0x11강까지 보시는 것을 추천드립니다.
-
-## 권장 자료 및 도구
-
-### 📚 학습 자료
-
-- **Effective Python** (Brett Slatkin)
-  - Python다운 코드 작성법을 배울 수 있는 책입니다
-  - 한글 번역본: **파이썬 코딩의 기술**
-  - 참고: [한국어 요약 노트](https://github.com/shoark7/Effective-Python) (1판 기준)
-  - **1장 파이썬답게 생각하기**는 꼭 읽어보시길 추천드립니다
-
-### 🛠 개발 도구 (VSCode 기준)
-
-- **Pylint** - PEP8 스타일 검사, 코드 품질 체크
-- **Pylance** - Type Annotation 검사, 자동완성
-
-Pylance는 VSCode Python extension에 포함되어 있으며, Pylint는 VSCode Extensions에서 검색해서 설치하면 됩니다. 코드 짜면서 실시간으로 피드백을 받을 수 있어서 정말 좋습니다.
-
-## 참고 사항
-
-- 이 풀이들은 학습 목적으로 작성했습니다
-- 제공된 모든 풀이는 백준에서 통과된 풀이지만, 더 효율적인 방법이 있을 수 있습니다
-- 문제 저작권은 [백준 온라인 저지 이용 규칙](https://help.acmicpc.net/rule)에 따라 문제를 만든 사람에게 있습니다
-- 강좌 및 워크북 저작권은 [바킹독](https://github.com/encrypted-def)님에게 있습니다
-
-## 기여
-
-오류 수정이나 더 나은 풀이 제안은 언제든 환영합니다!! 🙌
-
----
 
 **원본 강좌**: [바킹독의 실전 알고리즘](https://blog.encrypted.gg/category/강좌/실전%20알고리즘)  
 **원본 워크북**: [basic-algo-lecture](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)

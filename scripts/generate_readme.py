@@ -52,6 +52,22 @@ def load_problems() -> dict:
         return json.load(f)
 
 
+def extract_problem_name(readme_path: Path, problem_num: int) -> str:
+    """문제 README 제목에서 문제명 추출"""
+    if not readme_path.exists():
+        return f"문제 {problem_num}"
+
+    title_pattern = re.compile(r"^#\s*\d+번\.\s*(.+?)\s*$")
+
+    with open(readme_path, "r", encoding="utf-8") as f:
+        for line in f:
+            match = title_pattern.match(line.strip())
+            if match:
+                return match.group(1).strip() or f"문제 {problem_num}"
+
+    return f"문제 {problem_num}"
+
+
 def find_solved_problems(chapter_dir: Path) -> dict[int, tuple[str, str]]:
     """
     챕터 디렉토리에서 풀이 완료된 문제 찾기
@@ -61,15 +77,22 @@ def find_solved_problems(chapter_dir: Path) -> dict[int, tuple[str, str]]:
     if not chapter_dir.exists():
         return solved
 
-    # 패턴: "12345번. 문제명" 또는 "12345번.문제명"
-    pattern = re.compile(r"^(\d+)번[.\s]*(.*)$")
+    # 패턴: "12345번. 문제명", "12345번.문제명", "12345"
+    named_pattern = re.compile(r"^(\d+)번[.\s]*(.*)$")
+    numeric_pattern = re.compile(r"^\d+$")
 
     for item in chapter_dir.iterdir():
         if item.is_dir():
-            match = pattern.match(item.name)
-            if match:
-                problem_num = int(match.group(1))
-                problem_name = match.group(2).strip() or f"문제 {problem_num}"
+            named_match = named_pattern.match(item.name)
+            if named_match:
+                problem_num = int(named_match.group(1))
+                problem_name = named_match.group(2).strip() or extract_problem_name(item / "README.md", problem_num)
+                solved[problem_num] = (item.name, problem_name)
+                continue
+
+            if numeric_pattern.match(item.name):
+                problem_num = int(item.name)
+                problem_name = extract_problem_name(item / "README.md", problem_num)
                 solved[problem_num] = (item.name, problem_name)
 
     return solved
