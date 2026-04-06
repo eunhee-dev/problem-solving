@@ -1,31 +1,23 @@
-""" solve.py for 9498번. 시험 성적 """
-
 import sys
 
-
-def sys_input() -> str:
+def sys_input():
     return sys.stdin.readline().rstrip()
 
-
-def solve(score: int) -> str:
-    if 90 <= score <= 100:
+def solve():
+    score = int(sys_input())
+    if score >= 90:
         return "A"
-    elif 80 <= score < 90:
+    elif score >= 80 and score <= 89:
         return "B"
-    elif 70 <= score < 80:
+    elif score >= 70 and score <= 79:
         return "C"
-    elif 60 <= score < 70:
+    elif score >= 60 and score <= 69:
         return "D"
     else:
         return "F"
 
-
-def main() -> None:
-    score = int(sys_input())
-
-    answer: str = solve(score)
-    print(answer)
-
+def main():
+    print(solve())
 
 if __name__ == "__main__":
     main()
