@@ -1,23 +1,18 @@
-""" solve.py for 2753번. 윤년 """
-
 import sys
 
-
-def sys_input() -> str:
+def sys_input():
     return sys.stdin.readline().rstrip()
 
-
-def solve(year: int) -> int:
-    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
-        return 1
-    return 0
-
-def main() -> None:
+def solve():
     year = int(sys_input())
+    is_leap_year = False
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        is_leap_year = True
+    
+    print(int(is_leap_year))
 
-    answer: int = solve(year)
-    print(answer)
-
+def main():
+    solve()
 
 if __name__ == "__main__":
     main()
