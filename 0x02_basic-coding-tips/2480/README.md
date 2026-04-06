@@ -14,3 +14,7 @@ https://www.acmicpc.net/problem/2480
 
 
 3. `Counter`를 활용하면 좀 더 의미를 살려 명확하게 코딩할 수 있다. [[풀이 - solve_counter.py](./solve_counter.py)]
+    - 원소의 개수가 몇개인지 세 주기 -> 최빈값 구하기에 활용 가능 : `most_common`
+        - `most_common(k)` 로 top-k 쉽게 구할 수 있음
+        - ref) https://he-kate1130.tistory.com/123
+    - Note) 삼성 코테에서도 `collections` 사용 가능
