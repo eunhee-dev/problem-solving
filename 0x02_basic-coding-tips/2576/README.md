@@ -14,3 +14,5 @@ https://www.acmicpc.net/problem/2576
 
 
 3. 홀수가 없는 경우(`if not odds`)를 먼저 처리해야 한다.
+
+4. 입력이 `n`개의 여러 줄 정수로 주어지는 경우 -> `[int(sys_input()) for _ in range(n)]`
